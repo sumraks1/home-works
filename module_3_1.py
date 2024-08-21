@@ -14,7 +14,8 @@ def string_info(string):
 
 def is_contains(string, list_to_search):
     count_calls()
-    string = string.upper()
+    string = string.lower()
+    list_to_search = [string.lower() for string in list_to_search]
     return string in list_to_search
 
 
